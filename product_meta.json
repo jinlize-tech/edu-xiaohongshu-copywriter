@@ -1,0 +1,24 @@
+{
+  "number": 4,
+  "product_id": "JLZ-EDU-SK-004",
+  "chinese_name": "小红书招生文案",
+  "english_name": "Xiaohongshu Copywriter",
+  "repository_name": "edu-xiaohongshu-copywriter",
+  "product_type": "Skill",
+  "category": "01 招生营销中心",
+  "version": "1.0.0",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED",
+  "license": "Apache-2.0",
+  "baseline_tag": "education-product-baseline-v1.0.0",
+  "package_path": "dist/edu-xiaohongshu-copywriter-v1.0.0.zip",
+  "calculator": false,
+  "core_input": "课程卖点、目标家长、城市与平台语气、活动信息、可用素材",
+  "main_output": "多版标题、正文、封面文案、标签、互动提问和发布检查清单",
+  "package_entries": [
+    "edu-xiaohongshu-copywriter/SKILL.md",
+    "edu-xiaohongshu-copywriter/references/DOMAIN_GUIDE.md",
+    "edu-xiaohongshu-copywriter/references/EXAMPLES.md",
+    "edu-xiaohongshu-copywriter/templates/OUTPUT_TEMPLATE.md"
+  ]
+}

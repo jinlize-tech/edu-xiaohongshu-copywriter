@@ -1,0 +1,18 @@
+{
+  "product_id": "JLZ-EDU-SK-004",
+  "repository_name": "edu-xiaohongshu-copywriter",
+  "product_type": "Skill",
+  "version": "1.0.0",
+  "package_path": "dist/edu-xiaohongshu-copywriter-v1.0.0.zip",
+  "sha256": "86DB354DF290041A5051DBDE3B35195A06D642AD4642DA3E1855101C7A942DF0",
+  "bytes": 4877,
+  "entries": [
+    "edu-xiaohongshu-copywriter/SKILL.md",
+    "edu-xiaohongshu-copywriter/references/DOMAIN_GUIDE.md",
+    "edu-xiaohongshu-copywriter/references/EXAMPLES.md",
+    "edu-xiaohongshu-copywriter/templates/OUTPUT_TEMPLATE.md"
+  ],
+  "built_at": "2026-11-06T21:45:03.1103647+08:00",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED"
+}
