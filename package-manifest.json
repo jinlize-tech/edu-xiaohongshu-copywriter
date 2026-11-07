@@ -2,17 +2,29 @@
   "product_id": "JLZ-EDU-SK-004",
   "repository_name": "edu-xiaohongshu-copywriter",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-xiaohongshu-copywriter-v1.0.0.zip",
-  "sha256": "86DB354DF290041A5051DBDE3B35195A06D642AD4642DA3E1855101C7A942DF0",
-  "bytes": 4877,
+  "version": "1.0.1",
+  "package_path": "dist/edu-xiaohongshu-copywriter-v1.0.1.zip",
+  "sha256": "322DB1BEA859BF8CC8E38D30C0E8FAFF42C8669A992104452A50D8AC3273AB1A",
+  "bytes": 14790,
   "entries": [
     "edu-xiaohongshu-copywriter/SKILL.md",
     "edu-xiaohongshu-copywriter/references/DOMAIN_GUIDE.md",
     "edu-xiaohongshu-copywriter/references/EXAMPLES.md",
-    "edu-xiaohongshu-copywriter/templates/OUTPUT_TEMPLATE.md"
+    "edu-xiaohongshu-copywriter/templates/OUTPUT_TEMPLATE.md",
+    "edu-xiaohongshu-copywriter/README.md",
+    "edu-xiaohongshu-copywriter/USAGE.md",
+    "edu-xiaohongshu-copywriter/LICENSE",
+    "edu-xiaohongshu-copywriter/THIRD_PARTY_NOTICES.md",
+    "edu-xiaohongshu-copywriter/scripts/validate_input.js"
   ],
-  "built_at": "2026-11-06T21:45:03.1103647+08:00",
-  "status": "PACKAGE_READY",
-  "workbuddy_validation": "NOT_VERIFIED"
+  "license": "Apache-2.0",
+  "license_included": true,
+  "license_sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+  "third_party_notice_included": true,
+  "previous_package_path": "dist/edu-xiaohongshu-copywriter-v1.0.0.zip",
+  "previous_package_sha256": "86DB354DF290041A5051DBDE3B35195A06D642AD4642DA3E1855101C7A942DF0",
+  "built_at": "2026-11-07T09:08:13.6551304+08:00",
+  "status": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+  "runtime_status": "NOT_RUNTIME_VERIFIED",
+  "workbuddy_validation": "WORKBUDDY_VALIDATION_NOT_IN_SCOPE"
 }
