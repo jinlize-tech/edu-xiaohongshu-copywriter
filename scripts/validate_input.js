@@ -12,6 +12,7 @@ try {
 } catch (error) {
   emit({
     validation_status: 'INVALID_JSON',
+    scenario_name: null,
     errors: ['输入文件不是有效JSON'],
     required_fields: contract.required_fields,
     recommended_next_action: '修正JSON格式后重新提交'
@@ -21,6 +22,7 @@ try {
 if (!data || typeof data !== 'object' || Array.isArray(data)) {
   emit({
     validation_status: 'INVALID_STRUCTURE',
+    scenario_name: null,
     errors: ['顶层必须是JSON对象'],
     required_fields: contract.required_fields,
     recommended_next_action: '按照输入契约重新组织资料'
@@ -28,6 +30,8 @@ if (!data || typeof data !== 'object' || Array.isArray(data)) {
 }
 
 const inputs = data.inputs && typeof data.inputs === 'object' && !Array.isArray(data.inputs) ? data.inputs : {};
+const scenarioName = typeof data.scenario_name === 'string' ? data.scenario_name : null;
+const businessContext = typeof data.business_context === 'string' ? data.business_context : null;
 const isMissing = value => value === undefined || value === null || value === '' || (Array.isArray(value) && value.length === 0);
 const missingFields = contract.required_fields.filter(field => isMissing(inputs[field]));
 const conflicts = Array.isArray(data.conflicts) ? data.conflicts.filter(Boolean) : [];
@@ -52,6 +56,8 @@ const containsSensitiveData = data.contains_sensitive_data === true || sensitive
 if (missingFields.length > 0) {
   emit({
     validation_status: 'NEEDS_INPUT',
+    scenario_name: scenarioName,
+    business_context: businessContext,
     missing_fields: missingFields,
     conflicts: conflicts,
     output_fields: contract.output_fields,
@@ -63,6 +69,8 @@ if (missingFields.length > 0) {
 if (conflicts.length > 0 || dataStatus !== 'confirmed') {
   emit({
     validation_status: 'NEEDS_CONFIRMATION',
+    scenario_name: scenarioName,
+    business_context: businessContext,
     missing_fields: [],
     conflicts: conflicts,
     data_status: dataStatus,
@@ -74,6 +82,8 @@ if (conflicts.length > 0 || dataStatus !== 'confirmed') {
 if (containsSensitiveData) {
   emit({
     validation_status: 'READY_WITH_PRIVACY_WARNING',
+    scenario_name: scenarioName,
+    business_context: businessContext,
     missing_fields: [],
     conflicts: [],
     privacy_warning: true,
@@ -86,6 +96,8 @@ if (containsSensitiveData) {
 
 emit({
   validation_status: 'READY_FOR_PROCESSING',
+  scenario_name: scenarioName,
+  business_context: businessContext,
   missing_fields: [],
   conflicts: [],
   output_fields: contract.output_fields,

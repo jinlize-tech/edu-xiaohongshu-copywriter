@@ -28,3 +28,12 @@
 - State: G5_R2_STRENGTHENED / G9_R2_PRE_RELEASE_ACCEPTED / GITHUB_PACKAGE_V1.0.2_PRE_RELEASE_READY.
 - Runtime state: MODEL_RUNTIME_NOT_VERIFIED.
 - WorkBuddy validation: WORKBUDDY_VALIDATION_NOT_IN_SCOPE.
+
+## 1.1.0 - 2026-11-08
+
+- Rebuilt the product workflow around task-specific professional rules and minimum-question interaction.
+- Added USER_EXPERIENCE.md, references/PROFESSIONAL_PLAYBOOK.md and EDUCATION_1.1.0_UPGRADE_RECORD.md.
+- Added normal, incomplete, complex-conflict, sensitive and malformed business scenarios.
+- Strengthened conclusion-first output, execution actions, completion criteria and revision behavior.
+- Package state: GITHUB_PACKAGE_V1.1.0_PRE_RELEASE_READY.
+- Model runtime remains MODEL_RUNTIME_NOT_VERIFIED; WorkBuddy remains out of scope.

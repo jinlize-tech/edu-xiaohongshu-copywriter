@@ -1,0 +1,32 @@
+[
+  {
+    "id": "normal",
+    "file": "normal.json",
+    "expected": "READY_FOR_PROCESSING",
+    "purpose": "正常完整业务输入"
+  },
+  {
+    "id": "incomplete",
+    "file": "incomplete.json",
+    "expected": "NEEDS_INPUT",
+    "purpose": "关键资料不足，要求最小必要补充"
+  },
+  {
+    "id": "complex",
+    "file": "complex.json",
+    "expected": "NEEDS_CONFIRMATION",
+    "purpose": "跨部门冲突和未确认口径"
+  },
+  {
+    "id": "sensitive",
+    "file": "sensitive.json",
+    "expected": "READY_WITH_PRIVACY_WARNING",
+    "purpose": "敏感信息最小化处理"
+  },
+  {
+    "id": "malformed",
+    "file": "malformed.txt",
+    "expected": "INVALID_JSON",
+    "purpose": "非法输入恢复"
+  }
+]
